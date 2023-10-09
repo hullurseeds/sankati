@@ -1,0 +1,64 @@
+/* Reset some default styles for the body and anchor tags */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the page */
+    color: #333; /* Default text color */
+}
+
+/* Style for the header and navigation */
+header {
+    background-color: #0077cc;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style for the about section */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 24px;
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+/* Stylish body text */
+.stylish-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+}
+
+.stylish-text::first-letter {
+    font-size: 36px;
+    color: #0077cc;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}

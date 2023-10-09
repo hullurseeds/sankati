@@ -1,0 +1,230 @@
+/* styles.css */
+
+/* Apply styles to the header */
+.main-header {
+    display: flex; /* Use flexbox for layout */
+    background-color: hsl(0, 7%, 97%); /* Background color for the header */
+    color: #261111; /* Text color */
+    padding: 30px; /* Padding for top and bottom */
+    border-bottom: 1px solid #201e1e; /* Add a bottom border line */
+}
+
+/* Left-align the header horizontally */
+.main-header {
+    display: flex;
+    justify-content: left; /* left horizontally */
+    height: 12vh; /* Set the height of the logo container to the viewport height */
+}
+
+/* Styling for h3 elements */
+h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* You can use 'normal' or other values for font weight */
+    color: #333; /* Change the color to your desired text color */
+    margin-top: 10px; /* Add margin for spacing at the top */
+    margin-right: 20px; /* Adjust the margin value as needed */
+    margin-bottom: 10px; /* Add margin for spacing at the bottom */
+}
+
+
+/* Center-align the logo horizontally */
+.logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    left: 0; /* Align to the right */
+    height: 10vh; /* Set the height of the logo container to the viewport height */
+}
+/* Style the logo */
+.logo img {
+    position: absolute; /* Position the icons absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the right */
+    margin-top: 40px; /* Adjust the top margin as needed */
+    margin-left: 30px; /* Adjust the top margin as needed */
+    width: 300px; /* Set the width of the logo */
+    height: 65px; /* Maintain the aspect ratio */
+    animation: moveLogo 2s infinite; /* Apply the 'moveLogo' animation */
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 10;
+    margin: 1cap;
+    margin-right: 30px;
+}
+
+.nav-links li {
+    display: inline; /* Display list items horizontally */
+    margin: 10px; /* Add margin between list items */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #aba6a6; /* Text color for links */
+    font-family: Cambria, Cochin, Georgia, Times, 'cambria', serif; /* Specify the font family */
+    font-size: 18px; /* Set the font size */
+    font-weight: 50; /* Set the font weight to normal */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+    color: #0b0b0b; /* Change link color on hover */
+    text-decoration: overline; /* Add overline on hover */
+    text-decoration-color: blueviolet; /* Add  overline colour on hover */
+    transform: translateY(00.3s); /* Move the text up slightly on hover */
+}
+
+/* Style for the search box */
+.search-box {
+    position: absolute; /* Position the box button absolutely */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    margin-top: 110px; /* Adjust the top margin as needed */
+    margin-right: 200px; /* Adjust the top margin as needed */
+    display: flex;
+    align-items: center;
+    outline-color: #0b0b0b;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(56, 47, 47);
+}
+
+/* Style for the store icon */
+.store-icon {
+    position: absolute; /* Position the box button absolutely */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    margin-top: 120px; /* Adjust the top margin as needed */
+    margin-right: 50px; /* Adjust the top margin as needed */
+    font-size: 20px;
+}
+
+.store-icon a {
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+}
+
+/* Style the social media icons */
+.social-icons {
+    position: absolute; /* Position the icons absolutely */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-right: 30px; /* Adjust the top margin as needed */
+}
+
+.icon {
+    margin-right: 10px; /* Add space between icons */
+    color: #333; /* Icon color */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.icon:hover {
+    color: #001eff; /* Change icon color on hover */
+}
+
+/*About Section Style*/
+/* Style for the about section */
+.about-section {
+    max-width: 1500px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 24px;
+    color: #373838;
+    margin-bottom: 20px;
+}
+
+/* Stylish body text */
+.stylish-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #080808;
+    text-align: left;
+}
+
+.stylish-text::first-letter {
+    font-size: 36px;
+    color: #f02222;
+    float: rgb(208, 9, 9)
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*styles of Home section*/
+/* Style for the photo gallery section */
+.photo-gallery {
+    display: inline;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+/* Style for each photo in the gallery */
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo:hover {
+    transform: scale(0.7); /* Enlarge the photo on hover */
+}
+
+/* Style for the photo overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 240, 240, 0.5); /* Semi-transparent background */
+    color: #100f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo:hover .overlay {
+    opacity: 0; /* Show the overlay on hover */
+}
+
+/* Style for the photo title */
+.overlay h3 {
+    margin: 0;
+    padding: 30px;
+    font-size: 12px;
+    text-align: left;
+}
